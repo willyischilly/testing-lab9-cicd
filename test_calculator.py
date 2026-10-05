@@ -135,3 +135,7 @@ def test_is_prime_number_with_string_raises_type_error(calc):
     """Негативный тест: передача строки должна бросать TypeError."""
     with pytest.raises(TypeError):
         calc.is_prime_number("пять")
+
+def test_new_feature(calc):
+    """Проверка новой функциональности."""
+    assert calc.add(10, 10) == 20
